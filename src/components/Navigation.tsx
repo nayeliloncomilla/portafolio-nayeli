@@ -29,11 +29,6 @@ const Navigation: React.FC = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#projects" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-              Proyectos
-            </a>
-          </li>
-          <li className="nav-item">
             <a href="#skills" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               Habilidades
             </a>

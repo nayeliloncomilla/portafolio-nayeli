@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
               Especializada en React, diseño responsive e interfaces que conectan con las personas.
             </p>
             <div className="hero-buttons">
-              <a href="#projects" className="btn-primary">Ver Proyectos</a>
+              <a href="#skills" className="btn-primary">Ver Habilidades</a>
               <a href="#contact" className="btn-secondary">Contactar</a>
             </div>
           </div>
