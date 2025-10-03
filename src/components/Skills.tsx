@@ -6,10 +6,10 @@ const Skills: React.FC = () => {
     {
       category: "Frontend",
       skills: [
-        { name: "React", level: 90, icon: "⚛️" },
-        { name: "TypeScript", level: 85, icon: "📘" },
-        { name: "CSS/SCSS", level: 95, icon: "🎨" },
-        { name: "HTML5", level: 95, icon: "📝" },
+        { name: "React", level: 75, icon: "⚛️" },
+        { name: "TypeScript", level: 65, icon: "📘" },
+        { name: "CSS/SCSS", level: 75, icon: "🎨" },
+        { name: "HTML5", level: 85, icon: "📝" },
         { name: "Tailwind", level: 80, icon: "💨" }
       ]
     },
@@ -18,7 +18,7 @@ const Skills: React.FC = () => {
       skills: [
         { name: "Git", level: 85, icon: "🌿" },
         { name: "Vite", level: 80, icon: "⚡" },
-        { name: "Figma", level: 75, icon: "🎨" },
+        { name: "Figma", level: 90, icon: "🎨" },
         { name: "VS Code", level: 90, icon: "💻" },
         { name: "npm/yarn", level: 85, icon: "📦" }
       ]
@@ -29,7 +29,7 @@ const Skills: React.FC = () => {
         { name: "Comunicación", level: 90, icon: "💬" },
         { name: "Trabajo en Equipo", level: 95, icon: "🤝" },
         { name: "Creatividad", level: 90, icon: "✨" },
-        { name: "Resolución de Problemas", level: 85, icon: "🧩" },
+        { name: "Resolución de Problemas", level: 90, icon: "🧩" },
         { name: "Adaptabilidad", level: 90, icon: "🌱" }
       ]
     }
@@ -77,10 +77,6 @@ const Skills: React.FC = () => {
 
         {/* Estadísticas adicionales */}
         <div className="stats-section">
-          <div className="stat-item">
-            <div className="stat-number">15+</div>
-            <div className="stat-label">Proyectos Completados</div>
-          </div>
           <div className="stat-item">
             <div className="stat-number">2+</div>
             <div className="stat-label">Años de Experiencia</div>

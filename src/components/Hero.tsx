@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
             <h2 className="hero-title">Desarrolladora Frontend</h2>
             <p className="hero-description">
               Creando experiencias digitales hermosas y funcionales con pasión y atención al detalle. 
-              Especializada en React, diseño responsive y interfaces que conectan con las personas.
+              Especializada en React, diseño responsive e interfaces que conectan con las personas.
             </p>
             <div className="hero-buttons">
               <a href="#projects" className="btn-primary">Ver Proyectos</a>

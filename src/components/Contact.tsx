@@ -72,9 +72,6 @@ const Contact: React.FC = () => {
                 <a href={contactInfo.instagram} target="_blank" rel="noopener noreferrer" className="social-link instagram">
                   <span>Instagram</span>
                 </a>
-                <a href={contactInfo.behance} target="_blank" rel="noopener noreferrer" className="social-link behance">
-                  <span>Behance</span>
-                </a>
               </div>
 
               {/* Botón de descarga de CV */}
