@@ -1,0 +1,8 @@
+<!-- Este es un placeholder para el PNG -->
+<!-- En un entorno real, necesitarías convertir el SVG a PNG usando una herramienta como:
+     - ImageMagick: convert favicon.svg favicon-16x16.png
+     - Online converter: https://convertio.co/svg-png/
+     - Photoshop/GIMP
+     
+     Por ahora, mantenemos la configuración para que funcione con SVG -->
+<!-- favicon-16x16.png se generaría desde favicon.svg -->
