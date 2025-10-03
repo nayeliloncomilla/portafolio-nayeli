@@ -44,13 +44,14 @@ export const isValidChileanPhone = (phone: string): boolean => {
  * Configuración de contacto con validación
  */
 export const getSecureContactInfo = () => {
+  // Usar variables de entorno si están disponibles, fallback a valores por defecto
   const contactInfo = {
-    email: "nayeliloncomilla19@gmail.com",
-    phone: "+56 9 30513364",
-    location: "Santiago, Chile",
-    linkedin: "https://www.linkedin.com/in/nayeliloncomilla/",
-    github: "https://github.com/nayeliloncomilla",
-    instagram: "https://www.instagram.com/_.m0nster_/",
+    email: import.meta.env.VITE_CONTACT_EMAIL || "nayeliloncomilla19@gmail.com",
+    phone: import.meta.env.VITE_CONTACT_PHONE || "+56 9 30513364",
+    location: import.meta.env.VITE_CONTACT_LOCATION || "Santiago, Chile",
+    linkedin: import.meta.env.VITE_LINKEDIN_URL || "https://www.linkedin.com/in/nayeliloncomilla/",
+    github: import.meta.env.VITE_GITHUB_URL || "https://github.com/nayeliloncomilla",
+    instagram: import.meta.env.VITE_INSTAGRAM_URL || "https://www.instagram.com/_.m0nster_/",
   };
 
   // Validar que todas las URLs sean seguras

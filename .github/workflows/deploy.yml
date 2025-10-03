@@ -30,8 +30,17 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
         
+      - name: Create production .env
+        run: |
+          echo "VITE_APP_TITLE=${{ secrets.VITE_APP_TITLE || 'Nayeli Loncomilla | Desarrolladora Frontend' }}" >> .env
+          echo "VITE_APP_DESCRIPTION=${{ secrets.VITE_APP_DESCRIPTION || 'Portafolio profesional de Nayeli Loncomilla' }}" >> .env
+          echo "VITE_CONTACT_EMAIL=${{ secrets.VITE_CONTACT_EMAIL || 'nayeliloncomilla19@gmail.com' }}" >> .env
+        
       - name: Build
         run: yarn build
+        env:
+          # Variables de entorno para el build
+          NODE_ENV: production
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
