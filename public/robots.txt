@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Permitir indexación de todas las páginas principales
+Allow: /index.html
+Allow: /*.css
+Allow: /*.js
+Allow: /*.svg
+Allow: /*.jpg
+Allow: /*.png
+
+# Prohibir acceso a archivos sensibles
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /src/
+
+# Sitemap (cuando esté disponible)
+# Sitemap: https://nayeliloncomilla.github.io/portafolio-nayeli/sitemap.xml

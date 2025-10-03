@@ -22,3 +22,38 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment variables y archivos sensibles
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Archivos de configuración sensibles
+config.json
+secrets.json
+private-keys/
+*.key
+*.pem
+
+# Archivos de backup y temporales
+*.bak
+*.tmp
+*.swp
+*~
+
+# Archivos del sistema
+Thumbs.db
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Archivos de análisis y reportes
+coverage/
+.nyc_output/
+reports/
+
+# Dependencias de seguridad
+.snyk

@@ -1,16 +1,10 @@
 import React from 'react';
 import './Contact.css';
+import { getSecureContactInfo, getSecureGmailUrl } from '../utils/security';
 
 const Contact: React.FC = () => {
-  const contactInfo = {
-    email: "nayeliloncomilla19@gmail.com",
-    phone: "+56 9 30513364",
-    location: "Santiago, Chile",
-    linkedin: "https://www.linkedin.com/in/nayeliloncomilla/",
-    github: "https://github.com/nayeliloncomilla",
-    instagram: "https://www.instagram.com/_.m0nster_/z",
-    behance: "https://behance.net/nayeli-loncomilla"
-  };
+  // Usar información de contacto validada
+  const contactInfo = getSecureContactInfo();
 
   return (
     <section className="contact" id="contact">
@@ -36,7 +30,13 @@ const Contact: React.FC = () => {
                   <div className="contact-icon">📧</div>
                   <div className="contact-text">
                     <span className="contact-label">Email</span>
-                    <a href={`mailto:${contactInfo.email}`} className="contact-value">
+                    <a 
+                      href={getSecureGmailUrl(contactInfo.email)} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="contact-value"
+                      aria-label={`Enviar email a ${contactInfo.email}`}
+                    >
                       {contactInfo.email}
                     </a>
                   </div>
@@ -63,20 +63,43 @@ const Contact: React.FC = () => {
 
               {/* Redes sociales */}
               <div className="social-links">
-                <a href={contactInfo.linkedin} target="_blank" rel="noopener noreferrer" className="social-link linkedin">
+                <a 
+                  href={contactInfo.linkedin} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="social-link linkedin"
+                  aria-label="Visitar perfil de LinkedIn de Nayeli"
+                >
                   <span>LinkedIn</span>
                 </a>
-                <a href={contactInfo.github} target="_blank" rel="noopener noreferrer" className="social-link github">
+                <a 
+                  href={contactInfo.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="social-link github"
+                  aria-label="Visitar repositorios de GitHub de Nayeli"
+                >
                   <span>GitHub</span>
                 </a>
-                <a href={contactInfo.instagram} target="_blank" rel="noopener noreferrer" className="social-link instagram">
+                <a 
+                  href={contactInfo.instagram} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="social-link instagram"
+                  aria-label="Visitar perfil de Instagram de Nayeli"
+                >
                   <span>Instagram</span>
                 </a>
               </div>
 
               {/* Botón de descarga de CV */}
               <div className="cv-download">
-                <a href="/CV_Nayeli_Loncomilla_2025.pdf" download="CV_Nayeli_Loncomilla_2025.pdf" className="btn-cv">
+                <a 
+                  href="/CV_Nayeli_Loncomilla_2025.pdf" 
+                  download="CV_Nayeli_Loncomilla_2025.pdf" 
+                  className="btn-cv"
+                  aria-label="Descargar CV de Nayeli Loncomilla en formato PDF"
+                >
                   <span className="cv-icon">📄</span>
                   Descargar CV
                 </a>
