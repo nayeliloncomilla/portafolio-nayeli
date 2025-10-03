@@ -5,15 +5,15 @@
   "functions": {},
   "routes": [
     {
-      "src": "/Imagen de WhatsApp 2025-10-01 a las 15.35.56_6de76f6e.jpg",
-      "dest": "/Imagen de WhatsApp 2025-10-01 a las 15.35.56_6de76f6e.jpg",
+      "src": "/icon.jpg",
+      "dest": "/icon.jpg",
       "headers": {
         "cache-control": "public, max-age=86400"
       }
     },
     {
       "src": "/favicon.ico",
-      "dest": "/Imagen de WhatsApp 2025-10-01 a las 15.35.56_6de76f6e.jpg",
+      "dest": "/icon.jpg",
       "headers": {
         "cache-control": "public, max-age=86400"
       }
@@ -36,7 +36,7 @@
   ],
   "headers": [
     {
-      "source": "/Imagen de WhatsApp 2025-10-01 a las 15.35.56_6de76f6e.jpg",
+      "source": "/icon.jpg",
       "headers": [
         {
           "key": "Cache-Control",
