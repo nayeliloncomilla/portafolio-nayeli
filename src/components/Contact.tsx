@@ -11,7 +11,6 @@ const Contact: React.FC = () => {
       <div className="contact-container">
         {/* Header de la sección */}
         <div className="section-header">
-          <h2 className="section-title">¡Trabajemos Juntos!</h2>
           <div className="title-decoration"></div>
           <p className="section-subtitle">
             Hagamos de un proyecto algo increíble...

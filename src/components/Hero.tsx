@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
         <div className="hero-image">
           <div className="image-container">
             <img 
-              src="/Imagen de WhatsApp 2025-10-01 a las 15.35.56_6de76f6e.jpg" 
+              src="/icon.png" 
               alt="Nayeli - Desarrolladora Frontend"
               className="profile-photo"
             />
