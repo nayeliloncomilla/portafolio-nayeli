@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
         <div className="section-header">
           <div className="title-decoration"></div>
           <p className="section-subtitle">
-            Hagamos de un proyecto algo increíble...
+            Hagamos de un proyecto algo increíble....
           </p>
         </div>
 
